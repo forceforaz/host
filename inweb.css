@@ -1,0 +1,159 @@
+.card1 {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffcaf9 ;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    margin: 5px;
+    padding: 15px;
+}
+
+.card h3 {
+    color: palevioletred;
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    align-items: center;
+    background-color: #d669f9;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+.h1 {
+    color: whitesmoke;
+    font-size: 30px;
+    front-weight: bold;
+}
+.card-container {
+    display: flex;
+    gap: 10px; /* ระยะห่างระหว่างการ์ด */
+    justify-content: left; /* จัดให้อยู่กลางหน้าจอ */
+    flex-wrap: wrap; /* ถ้าหน้าจอเล็กลงให้ขึ้นบรรทัดใหม่ */
+    
+}
+.callum{
+    display: grid;
+    grid-template-columns: 1fr; /* 1 คอลัมน์ */
+    gap: 20px; /* ระยะห่าง */
+    justify-items: center; /* จัดให้อยู่กึ่งกลาง */
+}
+.divR{
+    float: right;
+}
+.divL{
+    float: left;
+}
+.divh1{
+    text-align: center;
+
+}
+.img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* สไตล์ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #be52fd;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* โลโก้ */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* เมนู */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* เอฟเฟกต์ hover */
+.navbar ul li a:hover {
+    background-color: #be52fd;
+    border-radius: 5px;
+}
+
+/* เมนูสำหรับมือถือ */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #be52fd;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
